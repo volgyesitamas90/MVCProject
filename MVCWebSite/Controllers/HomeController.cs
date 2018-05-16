@@ -10,6 +10,7 @@ namespace MVCWebSite.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Msg = "Hello Workld";
             return View();
         }
 
