@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create News Story</h2>
+<div>
+    <form method="POST" id="newsStory" class="reply" >
+        <fieldset>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <label>Headline: <span>*</span></label>
+                    <input class="form-control" id="headline" name="headline" type="text" value="" required=""/>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <label>Date: </label>
+                    <input class="form-control" id="date" name="date" value="" type="text"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <label>Story: <span>*</span></label>
+                    <textarea class="form-control" id="text" name="text" rows="3" cols="40" required> </textarea>
+                </div>
+            </div>
+        </fieldset>
+        <button class="btn-normal btn-color submit bottom-pad" type="submit">Send</button>
+        
+        
+
+    </form>
+</div>
+
+@ViewBag.Headline <br />
+@ViewBag.Date <br />
+@ViewBag.Body

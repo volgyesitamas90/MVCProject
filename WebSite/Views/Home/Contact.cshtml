@@ -1,0 +1,116 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<!-- Page heading -->
+<!-- Give background color class on below line (bred, bgreen, borange, bviolet, blightblue, bblue) -->
+<div class="page-heading blightblue">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="pull-left"><i class="icon-arrow-right title-icon"></i> Contact Us</h2>
+                <div class="pull-right heading-meta">We want to hear <span class="lightblue">from you!</span>. Please use this form to provide feedback.</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page heading ends -->
+<!-- Content starts -->
+<div class="content">
+    <div class="container">
+
+        <div class="contact">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Google maps -->
+                    <div class="gmap">
+                        <!-- Google Maps. Replace the below iframe with your Google Maps embed code -->
+                        <iframe height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Acton,+MA&hl=en&sll=42.036922,-71.683501&sspn=2.647686,3.532104&oq=Acton&hnear=Acton,+Middlesex,+Massachusetts&t=m&z=12"></iframe>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="cwell">
+                        <!-- Contact form -->
+                        <h3 class="title">Contact Form</h3>
+                        <div class="form">
+                            <!-- Contact form (not working)-->
+                            <form class="form-horizontal" method="POST">
+                                <!-- Name -->
+                                <div class="form-group">
+                                    <label class="control-label col-md-3" for="name">Name *</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" id="name" name="name" required>
+                                    </div>
+                                </div>
+                                <!-- Email -->
+                                <div class="form-group">
+                                    <label class="control-label col-md-3" for="email">Email *</label>
+                                    <div class="col-md-9">
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                    </div>
+                                </div>
+                                <!-- Website -->
+                                <div class="form-group">
+                                    <label class="control-label col-md-3" for="website">Website</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" id="website" name="website">
+                                    </div>
+                                </div>
+                                <!-- Comment -->
+                                <div class="form-group">
+                                    <label class="control-label col-md-3" for="comment">Comment</label>
+                                    <div class="col-md-9">
+                                        <textarea class="form-control" id="comment" name="comment" rows="3"></textarea>
+                                    </div>
+                                </div>
+                                <!-- Buttons -->
+                                <div class="form-group">
+                                    <!-- Buttons -->
+                                    <div class="col-md-9 col-md-offset-3">
+                                        <button type="submit" class="btn btn-info">Submit</button>
+                                        <button type="reset" class="btn btn-warning">Reset</button>
+                                        @if (ViewBag.MailSent != null && ViewBag.MailSent)
+                                        {
+                                            <script> alert("Mail Sent!"); </script>
+                                        }
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="cwell">
+                        <!-- Address section -->
+                        <h3 class="title">Address</h3>
+
+                        <div class="address">
+                            <address>
+                                <!-- Company name -->
+                                <h4>Liberty Associates, Inc.</h4>
+                                <!-- Address -->
+                                123 Main Street<br>
+                                Acton, MA 01720<br>
+                                <!-- Phone number -->
+                                <abbr title="Phone">P:</abbr> (617) 456-7890.
+                            </address>
+
+                            <address>
+                                <!-- Name -->
+                                <h4>Jesse Liberty</h4>
+                                <!-- Email -->
+                                <a href="mailto:#">jesseliberty@gmail.com</a>
+                            </address>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- Content ends -->

@@ -1,0 +1,18 @@
+﻿@using WebSiteNewsService
+
+@{
+    ViewBag.Title = "News";
+}
+
+<h2>News</h2>
+
+@foreach (StoryResponse response in ViewBag.Stories)
+{
+    <div>
+        <h2>@response.Headline</h2>
+        @response.StoryDate <br/>
+        @response.Body <br />
+        <hr/>
+    </div>
+}
+
